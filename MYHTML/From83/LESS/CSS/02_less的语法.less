@@ -1,0 +1,27 @@
+//less中的单行注释
+/* less多行注释*/
+// body{
+//     background-color: #bfa;
+// }
+
+//变量，方便维护
+//@变量名
+@lengtha:100px;
+@colora:#bfa;
+@diva:box2;
+@linka:lessimg;
+
+
+//直接使用
+.box1{
+    width: 200px;
+    height: $width;
+    background-color: @colora;
+}
+
+//作为类名或者一部分值
+.@{diva}{
+    width: @lengtha;
+    height: @lengtha;
+    background-image: url("../@{linka}/1.jpg");
+}

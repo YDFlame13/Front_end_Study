@@ -1,0 +1,33 @@
+.box1{
+    margin-top: 100px;
+    font-size: 50px;
+
+    /* 
+        text-decortion 设置文本修饰
+            可选值：
+                none 什么都没有
+                underline 下划线
+                line-through 删除线
+                overline 上划线
+    */
+
+    text-decoration: overline red;
+}
+
+.box2{
+    width: 200px;
+    /* 
+        white-space 设置网页如何处理空白
+            可选值：
+                normal 正常
+                nowrap 不换行
+                pre 保留空白
+    */
+    white-space: nowrap;
+
+    /* 超出区域进行隐藏 */
+    overflow: hidden;
+
+    /* 为溢出的文本设置省略号 */
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,135 @@
+.chatWindow {
+  width: 765px;
+  height: auto;
+  margin: 80px auto;
+  border-radius: 1%;
+  border: #c8c8c8 solid 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.chatWindow .whead {
+  width: 100%;
+  height: 80px;
+}
+.chatWindow .whead .ha {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-align: center;
+  background-image: linear-gradient(to right, #4c8cfe, #20d1fe);
+}
+.chatWindow .whead .hb {
+  padding-right: 18px;
+}
+.chatWindow .whead .hb .menupoint {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #78bcff;
+  float: right;
+  margin: 17px 2px;
+}
+.chatWindow .wbody {
+  width: 100%;
+  height: 438px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.chatWindow .wbody .chatmassage .massage {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+.chatWindow .wbody .chatmassage .massage .chater {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.chatWindow .wbody .chatmassage .massage .massagebox {
+  height: auto;
+  padding: 10px;
+  margin: 0 10px;
+  max-width: 643px;
+  border-radius: 6px;
+}
+.chatWindow .wbody .chatmassage .massage .massagebox p {
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+  word-break: keep-all;
+}
+.chatWindow .wbody .chatmassage li {
+  padding: 10px 10px;
+  height: auto;
+}
+.chatWindow .wbody .chatmassage .robot .chater {
+  background-image: url(../img/QQ图片20211120152051.jpg);
+  float: left;
+}
+.chatWindow .wbody .chatmassage .robot .massagebox {
+  float: left;
+  background-color: #e5e5e5;
+}
+.chatWindow .wbody .chatmassage .user .chater {
+  background-image: url('../img/QQ图片20211120152206.jpg');
+  float: right;
+}
+.chatWindow .wbody .chatmassage .user .massagebox {
+  float: right;
+  background-color: #12b7f5;
+}
+.chatWindow .wfoot {
+  height: 139px;
+  border-top: #ebebeb solid 1px;
+}
+.chatWindow .wfoot .fmenu {
+  height: 40px;
+  padding-left: 16px;
+}
+.chatWindow .wfoot .fmenu .fmenupoint {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #878b99;
+  float: left;
+  margin: 17px 2px;
+}
+.chatWindow .wfoot .myworlds {
+  width: 745px;
+  height: 50px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  padding: 0 10px;
+  font-size: 18px;
+}
+.chatWindow .wfoot .myworlds:focus-visible {
+  outline: none;
+}
+.chatWindow .wfoot .fsubmit {
+  height: 50px;
+}
+.chatWindow .wfoot .fsubmit .fclose,
+.chatWindow .wfoot .fsubmit .fsend {
+  width: 72px;
+  height: 28px;
+  float: right;
+  margin: 10px 12px;
+  text-align: center;
+  line-height: 28px;
+  border-radius: 8%;
+}
+.chatWindow .wfoot .fsubmit .fclose {
+  width: 70px;
+  height: 26px;
+  background-color: white;
+  border: #cdcfd0 solid 1px;
+}
+.chatWindow .wfoot .fsubmit .fsend {
+  background-color: #12b7f5;
+}
+/*# sourceMappingURL=./index.css.map */

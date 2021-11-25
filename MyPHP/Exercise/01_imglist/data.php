@@ -1,0 +1,12 @@
+<?php
+    header('content-type:text/html;charset=utf-8');
+    $imgDataArr=array(
+        array('name'=>'图片一','src'=>'./img/01.jpg','href'=>'#','inf'=>'图片信息','type'=>'动漫'),
+        array('name'=>'图片二','src'=>'./img/02.jpg','href'=>'#','inf'=>'图片信息','type'=>'动漫'),
+        array('name'=>'图片三','src'=>'./img/03.jpg','href'=>'#','inf'=>'图片信息','type'=>'动漫'),
+        array('name'=>'图片四','src'=>'./img/04.jpg','href'=>'#','inf'=>'图片信息','type'=>'风景'),
+        array('name'=>'图片五','src'=>'./img/05.png','href'=>'#','inf'=>'图片信息','type'=>'风景'),
+        array('name'=>'图片六','src'=>'./img/06.jpg','href'=>'#','inf'=>'图片信息','type'=>'汽车'),
+        array('name'=>'图片七','src'=>'./img/07.jpg','href'=>'#','inf'=>'图片信息','type'=>'汽车'),
+    );
+?>

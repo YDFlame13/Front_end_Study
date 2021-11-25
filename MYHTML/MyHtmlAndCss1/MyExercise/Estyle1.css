@@ -1,0 +1,28 @@
+.a1{
+    /* 内容区设置 */
+    width: 284px; 
+    background-color: rgb(244,244,244);
+    /* 边框设置 */
+
+
+    /* 外边距设计 */
+    margin: 10px auto;
+
+    /* 溢出设置 */
+    overflow:hidden;
+}
+
+.b{
+    /* 内容区设置 */
+    width: 240px;
+    height: 200px;
+    background-color: rgb(230,229,237);
+
+    /* 外边距设计 */
+    margin: 20px auto;
+}
+
+.p{
+    width: 240px;
+    height: 200px;
+}

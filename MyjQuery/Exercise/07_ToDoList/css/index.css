@@ -1,0 +1,70 @@
+body {
+  background-color: #cbcecb;
+}
+.header {
+  height: 60px;
+  width: 100%;
+  background-color: black;
+}
+.header .logo {
+  margin-top: 5px;
+  color: white;
+  font-size: 40px;
+}
+.header .add {
+  margin-top: 13px;
+}
+.num p {
+  width: 20px;
+  height: 20px;
+  margin-left: 28px;
+  border-radius: 50%;
+  background-color: #e1e6f8;
+  font-size: 16px;
+  text-align: center;
+}
+.tit {
+  font-size: 30px;
+  font-weight: bolder;
+}
+li {
+  height: 30px;
+  margin: 20px;
+  background-color: #fcfffc;
+  padding: 0 10px;
+}
+li input {
+  width: 18px;
+  height: 18px;
+}
+li span {
+  margin-left: 10px;
+  font-size: 18px;
+  color: black;
+}
+li a {
+  float: right;
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-color: #cbcdcb;
+}
+.bodyer .nowDo {
+  margin-top: 30px;
+}
+.bodyer .did {
+  margin-top: 30px;
+}
+.bodyer .did li {
+  background-color: #e4e6e3;
+}
+.bodyer .did li span {
+  color: #787a78;
+}
+.footer {
+  margin-top: 50px;
+}
+/*# sourceMappingURL=./index.css.map */

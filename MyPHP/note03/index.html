@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+            document.querySelector('input').onclick=function(){
+                // 创建异步对象
+                var xhr=new XMLHttpRequest();
+                //请求行
+                // get请求需要发送数据，采用拼接URL方法
+                // 参数三：是否使用异步，默认是true，false(同步)：请求返回前不能执行其他操作
+                xhr.open('get','xxx.php',true);
+                // 注册回调函数,请求响应回来后执行
+                // xhr.onload=function(){
+                //     console.log("请求响应成功返回，回调函数执行！");
+                //     // xhr.responseText 返回的内容（文本）
+                //     console.log(xhr.responseText);
+                // }
+
+                // 为了兼容性更好，使用onreadystatechange事件，该事件：
+                    // 状态改变即会触发，为确保请求已经返回，需要限制状态
+                xhr.onreadystatechange=function(){
+                    // 确保已经返回，并且请求地址存在
+                    if(xhr.readyState==4&&xhr.status==200){
+                        console.log("请求响应成功返回，回调函数执行！");
+                        // xhr.responseText 返回的内容（文本）
+                        console.log(xhr.responseText);
+                    }
+                }
+
+                // 请求头 setRequestHeader() 参数：key1,valve1
+                // get请求可以省略，post请求不发送数据也可以省略
+                // 但是post 要发送数据，一定不能省略，应该设置为：
+                    // xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+                // xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+                // 请求主体&&发
+                // post 请求需要发送数据，采用send('key1=value1&key2=value2...')
+                // 注意！'key1=value1&key2=value2...'等号两边不能为了格式化加空格，否者空格会被解析为下划线(_)
+                xhr.send(null);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="发送请求报文">
+</body>
+</html>

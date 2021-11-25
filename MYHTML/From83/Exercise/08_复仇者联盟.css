@@ -1,0 +1,60 @@
+html{
+    perspective: 800px;
+}
+
+.a{
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    /* background-color: aquamarine; */
+    /* position: relative; */
+    transform-style: preserve-3d;
+    /* transform: rotateX(45deg) rotateY(70deg); */
+    animation: run 10s infinite;
+}
+
+.a > div{
+    width: 200px;
+    height: 200px;
+    /* opacity: 为元素设置透明效果 */
+    opacity: 0.8;
+    position: absolute;
+}
+
+img{
+    vertical-align: bottom;
+}
+
+.b1{
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+.b2{
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+.b3{
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.b4{
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.b5{
+    transform: translateZ(-100px);
+}
+
+.b6{
+    transform: translateZ(100px);
+}
+
+@keyframes run{
+    from{
+        transform: rotateX(0deg) rotateZ(0deg);
+    }
+
+    to{
+        transform: rotateX(360deg) rotateZ(360deg);
+    }
+}

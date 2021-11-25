@@ -1,0 +1,11 @@
+/* less多行注释*/
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: #bfa;
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  background-image: url("../lessimg/1.jpg");
+}

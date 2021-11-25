@@ -1,0 +1,27 @@
+.menu{
+    padding: 135px 0 0 312px;
+    background-color: rgb(255,255,255);
+}
+
+.menu a{
+    /* 设置字体大小和颜色 */
+    font-size: 13px;
+    color: black;
+
+    /* 去掉链接下划线 */
+    text-decoration: none;
+
+    /* 设置外边距 */
+    padding: 0 12px;
+}
+
+.menu a:hover{
+    color: red;
+}
+
+.menu .f{
+    /* 加粗文字 */
+    font-weight: bold;
+
+    color: red;
+}

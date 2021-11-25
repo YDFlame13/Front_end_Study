@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>键盘控制移动</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script>
+        window.onload=function(){
+            //获取a
+            var a=document.getElementById("a");
+            //获取map
+            var map=document.getElementById("map");
+            //设置一个计时器
+            var key;
+            var astyle=a.currentStyle||getComputedStyle(a,null);
+            var mapstyle=map.currentStyle||getComputedStyle(map,null);
+            var onestep=parseInt(astyle.width);
+            var timeer=setInterval(function(){
+                switch(key){
+                    //37 左
+                    case 37:
+                        var nextleft=parseInt(astyle.left)-onestep;
+                        if(nextleft<0)break;
+                        a.style.left=nextleft+"px";
+                        break;
+                    //39 右
+                    case 39:
+                        var nextleft=parseInt(astyle.left)+onestep;
+                        if(nextleft>=parseInt(mapstyle.width))break;
+                        a.style.left=nextleft+"px";
+                        break;
+                    //38 上
+                    case 38:
+                        var nexttop=parseInt(astyle.top)-onestep;
+                        if(nexttop<0)break;
+                        a.style.top=nexttop+"px";
+                        break;
+                    //37 下
+                    case 40:
+                        var nexttop=parseInt(astyle.top)+onestep;
+                        if(nexttop>=parseInt(mapstyle.height))break;
+                        a.style.top=nexttop+"px";
+                        break;
+                }
+            },200);
+            //为文档设置按键按下事件
+            document.onkeydown=function(event){
+                /*
+                    37 左
+                    38 上
+                    39 右
+                    40 下
+                */
+               key=event.keyCode;
+               console.log(key);
+            }
+            document.onkeyup=function(){
+                key=0;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="map">
+        <div id="a"></div>
+    </div>
+</body>
+</html>

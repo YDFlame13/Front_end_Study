@@ -1,0 +1,40 @@
+.all-warp {
+  width: 800px;
+  margin: 100px auto;
+  border: black solid 2px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.all-warp p {
+  margin: 0 5px;
+  margin-top: 210px;
+}
+.all-warp .main {
+  width: 650px;
+  margin: 30px 0;
+}
+.all-warp .main .text {
+  height: 200px;
+}
+.all-warp .main .items {
+  margin: 10px;
+}
+.all-warp .main .items li {
+  height: 20px;
+  padding-bottom: 2px;
+  font-size: 14px;
+  border-bottom: darkgrey dashed 1px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.all-warp .main .items li a {
+  text-decoration: none;
+}
+.all-warp .submit {
+  margin: 0 5px;
+  margin-top: 210px;
+}
+/*# sourceMappingURL=./index.css.map */

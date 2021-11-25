@@ -1,0 +1,11 @@
+div {
+  width: 300px;
+  margin: 50px auto;
+}
+#inf {
+  width: 300px;
+  height: 700px;
+  background-color: aquamarine;
+  overflow: auto;
+}
+/*# sourceMappingURL=./index.css.map */

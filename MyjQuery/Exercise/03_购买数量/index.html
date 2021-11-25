@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购买数量</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fa/css/all.min.css">
+    <link rel="stylesheet" href="./bootStrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./bootStrap/js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <div class="container">
+        <ul class="shopping-car list-unstyled" style="margin-top: 50px;">
+            <li class="row">
+                <form class="form-inline">
+                    <div class="form-group col-lg-8">
+                        <label for="item1" class="item col-lg-2 lead text-center">商品一</label>
+                        <label for="item1" class="cost col-lg-3 lead text-center">99.99￥/件</label>
+                        <button class="sub btn btn-default">-</button>
+                        <input class="num form-control text-center" type="text" id="item1" value="1">
+                        <button class="add btn btn-default">+</button>
+                    </div>
+                </form>
+                <span class="sum col-lg-3 lead text-center"></span>
+            </li>
+            <li class="row">
+                <form class="form-inline">
+                    <div class="form-group col-lg-8">
+                        <label for="item1" class="item col-lg-2 lead text-center">商品二</label>
+                        <label for="item1" class="cost col-lg-3 lead text-center">12.99￥/件</label>
+                        <button class="sub btn btn-default">-</button>
+                        <input class="num form-control text-center" type="text" id="item1" value="1">
+                        <button class="add btn btn-default">+</button>
+                    </div>
+                </form>
+                <span class="sum col-lg-3 lead text-center"></span>
+            </li>
+            <li class="row">
+                <form class="form-inline">
+                    <div class="form-group col-lg-8">
+                        <label for="item1" class="item col-lg-2 lead text-center">商品三</label>
+                        <label for="item1" class="cost col-lg-3 lead text-center">89.99￥/件</label>
+                        <button class="sub btn btn-default">-</button>
+                        <input class="num form-control text-center" type="text" id="item1" value="1">
+                        <button class="add btn btn-default">+</button>
+                    </div>
+                </form>
+                <span class="sum col-lg-3 lead text-center"></span>
+            </li>
+        </ul>
+        <div class="row">
+            <span class="allSum lead text-center col-lg-3 col-lg-offset-8"></span>
+        </div>
+    </div>
+</body>
+</html>

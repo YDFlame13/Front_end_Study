@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script>
+        window.onload=function(){
+            //获取img
+            var img=document.getElementsByTagName("img")[0];
+            var imgsrcs=["./img/01.jpg","./img/02.jpg","./img/03.jpg","./img/04.jpg","./img/05.jpg","./img/06.jpg"];
+            var index=0;
+            var i=0;
+            //获取iofall
+            var iofall=document.getElementById("iofall");
+            iofall.innerHTML="1"+"/"+imgsrcs.length;
+            //添加一个计时器
+            var timeer=setInterval(function(){
+                index++;
+                i++;
+                index%=imgsrcs.length;
+                img.src=imgsrcs[index];
+                iofall.innerHTML=index+1+"/"+imgsrcs.length;
+                if(i==100)clearInterval(timeer);
+            },1000);
+        }
+    </script>
+</head>
+<body>
+    <div class="imgset">
+        <div id="iofall"></div>
+        <img src="./img/01.jpg" alt="">
+    </div>
+</body>
+</html>

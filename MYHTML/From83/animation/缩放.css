@@ -1,0 +1,37 @@
+.box1{
+    margin: 100px auto;
+    width: 100px;
+    height: 100px;
+    background-color: #bfa;
+    transition: 2s;
+}
+
+.box1:hover{
+    /* 
+        对元素进行缩放函数
+            scaleX()
+            scaleY()
+            scale()  两个方向
+    */
+    transform: scale(2);
+
+    /* 变形原点 */
+    transform-origin: 0 0;
+}
+
+.box2{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border: red solid 1px;
+    overflow: hidden;
+}
+
+img{
+    transition: .3s;
+}
+
+.box2:hover img{
+    transform-origin: 100px 0px;
+    transform: scale(1.3);
+}

@@ -1,0 +1,53 @@
+.a{
+    width: 500px;
+    height: 500px;
+    background-color:#bfa;
+
+    position: relative;
+}
+
+.b{
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+
+    position: absolute;
+
+    /* 在所在包含块中居中 */
+
+    /* 水平居中 */
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    /* 垂直居中 */
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.fa-cat{
+    color: blue;
+    font-size: 100px;
+}
+
+.fa-question-circle{
+    font-size: 200px;
+    color: red;
+}
+
+li::before{
+    /* 通过伪元素来设置图标字体 */
+    content:'\f0a9';
+    
+    /* font-family: 'Font Awesome 5 Brands';*/
+
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+
+    color: royalblue;
+
+    margin: 10px;
+}

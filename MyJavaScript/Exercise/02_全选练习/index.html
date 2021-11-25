@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全选练习</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- <link rel="stylesheet" href="./css/index.css"> -->
+    <script>
+        window.onload=function(){
+            //定义为获取按钮并为其设置单机事件函数
+            function myclick(btnid,fun){
+                var btn=document.getElementById(btnid);
+                btn.onclick=fun;
+            }
+            //获取全选/全不选框
+            var checkedAllBox=document.getElementById("checkedAllBox");
+            //获取运动项目选框
+            var items=document.getElementsByName("items");
+            //定义全选/全不选框状态判断函数
+            function setcheckedAllBox(){
+                var flag=true;
+                for(var i=0;i<items.length;++i){
+                    if(!items[i].checked){
+                        flag=false;
+                        break;
+                    }
+                }
+                checkedAllBox.checked=flag;
+            }
+            for(var i=0;i<items.length;++i){
+                items[i].onclick=setcheckedAllBox;
+            }
+            //为全选设置事件
+            myclick("checkedAllBtn",function(){
+                for(var i=0;i<items.length;++i){
+                    items[i].checked=true;
+                }
+                setcheckedAllBox();
+            })
+            //为全不选设置事件
+            myclick("checkedNoBtn",function(){
+                for(var i=0;i<items.length;++i){
+                    items[i].checked=false;
+                }
+                setcheckedAllBox();
+            })
+            //为反选设置事件
+            myclick("checkedRevBtn",function(){
+                for(var i=0;i<items.length;++i){
+                    items[i].checked=!items[i].checked;
+                }
+                setcheckedAllBox();
+            })
+            //为提交设置事件
+            myclick("sendBtn",function(){
+                for(var i=0;i<items.length;++i){
+                    if(items[i].checked)alert(items[i].id);
+                }
+            })
+            //为全选/全不选框设置事件
+            myclick("checkedAllBox",function(){
+                for(var i=0;i<items.length;++i){
+                    items[i].checked=this.checked
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+    <form action="" method="post">
+        你爱好的运动是？<input type="checkbox" name="" id="checkedAllBox">全选/全不选<br/>
+        <input type="checkbox" name="items" id="足球">足球
+        <input type="checkbox" name="items" id="篮球">篮球
+        <input type="checkbox" name="items" id="羽毛球">羽毛球
+        <input type="checkbox" name="items" id="乒乓球">乒乓球
+        <br>
+        <input type="button" id="checkedAllBtn" value="全  选">
+        <input type="button" id="checkedNoBtn" value="全不选">
+        <input type="button" id="checkedRevBtn" value="反  选">
+        <input type="button" id="sendBtn" value="提  交">
+    </form>
+</body>
+</html>

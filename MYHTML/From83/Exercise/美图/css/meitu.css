@@ -1,0 +1,49 @@
+body {
+  height: 1000px;
+}
+a {
+  font-family: PingFang SC, helvetica neue, tahoma, microsoft yahei, arial, hiragino sans gb, sans-serif;
+  text-decoration: none;
+  color: #fefbfa;
+  font-size: 16px;
+  font-weight: bolder;
+}
+@media only screen and (min-width: 1033px) {
+  .header_wrap {
+    height: 90px;
+    width: 100%;
+    background-color: #ffbef8;
+  }
+  .header_wrap .header_content {
+    width: 992.625px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+  .header_wrap .header_content .logo {
+    flex-grow: 1;
+  }
+  .header_wrap .header_content .logo img {
+    width: 107px;
+  }
+  .header_wrap .header_content ul {
+    display: flex;
+    width: 503.06px;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+  .header_wrap .header_content .lang {
+    margin-left: 28px;
+  }
+  .header_wrap .header_content .lang i {
+    color: #fefbfa;
+    font-size: 16px;
+  }
+  .header_wrap .header_content .lang span {
+    color: #eed3eb;
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=./meitu.css.map */

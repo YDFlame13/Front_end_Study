@@ -1,0 +1,178 @@
+@opx: 0.13333333vw;
+
+.w{
+    width: 693*@opx;
+    margin: 0 auto;
+}
+
+html{
+    background-color: rgb(239,240,244);
+    body{
+        .header{
+            margin-top: 62*@opx;
+            .headfaction{
+                display: flex;
+                flex-flow:row nowrap;
+                justify-content: space-between;
+                align-items: baseline;
+                a{
+                    .i-menu{
+                        width: 52*@opx;
+                    }
+                    .i-search{
+                        width: 42*@opx;
+                    }
+                }
+                span{
+                    font-size: 54*@opx;
+                }
+            }
+        }
+
+        .bodyer{
+            .bodyerh-wrp{
+                margin-top: 40*@opx;
+                .bodyerh{
+                    a{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            .bodyerb-wrp{
+                margin-top: 40*@opx;
+                .bodyerb{
+                    height: 246*@opx;
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    align-content: space-between;
+                    a{
+                        display: flex;
+                        width: 327*@opx;
+                        height: 104*@opx;
+                        border-radius: 10*@opx;
+                        box-shadow: 0 0 8*@opx rgba(0,0,0,.3);
+                        text-decoration: none;
+                        color: white;
+                        font-size: 30*@opx;  
+                        flex-flow: nowrap;
+                        justify-content: center;
+                        align-items:center;
+                        img{
+                            margin-right: 30*@opx;
+                        }
+                    }
+
+                    .a1{
+                        background-color: rgb(249,112,83);
+                        img{
+                            width: 45*@opx;
+                        }
+                    }
+
+                    .a2{
+                        background-color: rgb(202,99,254);
+                        img{
+                            width: 45*@opx;
+                        }
+                    }
+
+                    .a3{
+                        background-color: rgb(255,57,113);
+                        img{
+                            width: 40*@opx;
+                        }
+                    }
+
+                    .a4{
+                        background-color: rgb(29,146,255);
+                        img{
+                            width: 40*@opx;
+                        }
+                    }
+                }
+            }
+
+            .bodyerf-wrp{
+                .bodyerf{
+                    .courselist{
+                        .chead{
+                            margin-top: 40*@opx;
+                            display: flex;
+                            flex-flow: row wrap;
+                            justify-content:space-between;
+                            .coursetitle{
+                                display: flex;
+                                .blueline{
+                                    width: 3*@opx;
+                                    height: 38*@opx;
+                                    background-color: rgb(58,132,255);
+                                    margin-right: 20*@opx;
+                                }
+                                span{
+                                    font-size: 38*@opx;
+                                }
+                            }
+                            .more{
+                                span{
+                                    font-size: 38*@opx;
+                                    color: rgb(125,126,126);
+                                }
+                            }
+                        }
+                        .course{
+                            margin-top: 40*@opx;
+                            display: flex;
+                            width: 721.5*@opx;
+                            overflow: auto;
+                            li{
+                                width: 322*@opx;
+                                height: 326*@opx;
+                                margin-right: 26*@opx;
+                                background-color: white;
+                                border-radius: 16*@opx;
+                                box-shadow: 0 0 10*@opx rgba(0,0,0,.1);
+                                display: flex;
+                                flex-flow: column;
+                                flex:none;
+                                align-items: center;
+                                .imga{
+                                    margin-top: 25*@opx;
+                                    img{
+                                        width: 283*@opx;
+                                        // height: 157*@opx;
+                                    }
+                                }
+                                .spana{
+                                    margin-top: 25*@opx;
+                                    text-decoration: none;
+                                    color: black;
+                                    font-size: 29*@opx;
+                                }
+                                .teachera{
+                                    margin-top: 22*@opx;
+                                    text-decoration: none;
+                                    color: rgb(185,184,184);
+                                    align-self: start;
+                                    display: flex;
+                                    flex-flow: row nowrap;
+                                    align-items: center;
+                                    img{
+                                        width: 44*@opx;
+                                        margin: 0 16*@opx 0 28*@opx;
+                                    }
+                                    span{
+                                        font-size: 25*@opx;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

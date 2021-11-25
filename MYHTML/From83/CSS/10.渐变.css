@@ -1,0 +1,32 @@
+.box1{
+    width: 200px;
+    height: 200px;
+    background-color: #bfa;
+
+    /* 
+        通过渐变可以设置一些复杂的背景颜色，可以实现从一个颜色到另一个颜色渐变的过程
+        ！！渐变是图片，需要通过background-image设置
+
+        线性渐变，颜色沿一条直线渐变
+            linear-gradient()
+            linear-gradient(red,blue) 红色到蓝色的渐变（垂直方向，从上到下）
+            线性渐变开头我们可以指定渐变方向
+                to top,to bottom,to right,to left 
+                xxxdeg deg 旋转度数
+                turn 表示圈
+            渐变可以在多个颜色之间渐变，多个颜色默认平均分配
+                在颜色后可设置颜色开始位置，从而自定义分配颜色
+            repeating-linear-gradient 可以重复的线性渐变
+
+        径向渐变(放射性效果)
+            radial-gradient
+                默认情况渐变形状与元素形状有关
+                可以自己指定大小 background-image: radial-gradient(100px 100px,red,yellow);
+                可以指定渐变中心 background-image: radial-gradient(100px 100px at top right,red,yellow);
+
+    */
+    background-image: linear-gradient(red,blue,orange,black 150px);
+    background-image: repeating-linear-gradient(orange,yellow 50px);
+
+    background-image: radial-gradient(100px 100px at top right,red,yellow);
+}

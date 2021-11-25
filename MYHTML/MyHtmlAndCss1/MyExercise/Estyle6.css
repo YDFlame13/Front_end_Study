@@ -1,0 +1,38 @@
+ul{
+    position: relative;
+
+    margin-top: 150px;
+    height: 470px;
+    width: 590px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul li{
+    position: absolute;
+}
+
+ul div{
+    position: absolute;
+    z-index: 9999;
+    bottom: 20px;
+    left: 20px;
+}
+
+ul div a{
+    float: left;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    background-clip: content-box;
+    border: 2px solid transparent;
+    margin: 0 2px;
+}
+
+ul div a:last-child,ul div a:hover{
+    background-color: white;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}

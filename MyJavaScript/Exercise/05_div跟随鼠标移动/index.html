@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div跟随鼠标移动</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script>
+        window.onload=function(){
+            //获取body
+            var body=document.getElementsByTagName("body")[0];
+            //获取div
+            var div=document.getElementById("mous");
+            body.onmousemove=function(event){
+                event=event||window.event;
+                //获取鼠标的坐标,相对于视口
+                var x=event.clientX;
+                var y=event.clientY;
+                
+                //获取鼠标的坐标，相对于页面
+                //注意：IE8不兼容下面两个属性（pageX,pageY）
+                var xx=event.pageX;
+                var yy=event.pageY;
+                //创建设置div样式
+                // var div=document.createElement("div");
+                // div.style.width="100px";
+                // div.style.height="50px";
+                // div.style.border="black solid 2px";
+                // div.style.position="absolute";
+
+                //获取滚动条的滚动量
+                //这里注意滚动条chrome认为滚动条是body的，但是IE等认为是html的，需要兼容。
+                var sT=document.body.scrollTop||document.documentElement.scrollTop;
+                var sL=document.body.scrollLeft||document.documentElement.scrollLeft;
+                div.style.visibility="inherit";
+                div.style.left=x-50+sL+"px";
+                div.style.top=y-25+sT+"px";
+                // div.innerHTML=x+y;
+                // body.appendChild(div);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="mous"></div>
+</body>
+</html>

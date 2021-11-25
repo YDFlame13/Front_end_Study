@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload=function(){
+            document.querySelector('input').onblur=function(){
+                var xhr=new XMLHttpRequest();
+                xhr.open('get','userData.php?userName='+this.value);
+                xhr.onload=function(){
+                    // console.log(xhr.responseText);
+                    document.querySelector('h2').innerHTML=xhr.responseText;
+                }
+                xhr.send(null);
+                document.querySelector('h2').innerHTML='验证中……';
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="用户名">
+    <h2></h2>
+</body>
+</html>

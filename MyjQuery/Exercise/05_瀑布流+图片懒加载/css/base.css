@@ -1,0 +1,10 @@
+.clearfix::after,
+.clearfix::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body{
+    background-color: rgb(235, 156, 218);
+}

@@ -1,0 +1,19 @@
+/* css也支持变量设置 */
+html{
+    --colorx:red;
+}
+
+.box1{
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    background-color: var(--colorx);
+}
+
+.box2{
+    width: 100px;
+    height: 100px;
+    border: var(--colorx) solid 50px;
+    background-color: white;
+    color: var(--colorx);
+}

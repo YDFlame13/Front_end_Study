@@ -1,0 +1,59 @@
+@minwidth:1033px;
+body{
+    height: 1000px;
+}
+
+a{
+    font-family: PingFang SC,helvetica neue,tahoma,microsoft yahei,arial,hiragino sans gb,sans-serif;
+    text-decoration: none;
+    color: rgb(254,251,250);
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+@media only screen and (min-width:@minwidth){
+    .header_wrap{
+        height: 90px;
+        width: 100%;
+        background-color: rgb(255,190,248);
+        .header_content{
+            width: 992.625px;
+            height: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            .logo{
+                flex-grow: 1;
+                img{
+                    width: 107px;
+                }
+            }
+            ul{
+                display: flex;
+                width: 503.06px;
+                flex-flow: row nowrap;
+                justify-content:space-around;
+            }
+            .lang{
+                margin-left: 28px;
+                i{
+                    color: rgb(254,251,250);
+                    font-size: 16px;
+                }
+                span{
+                    color: rgb(238,211,235);
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:@minwidth){
+    .header_wrap{
+        .header_content{
+            
+        }
+    }
+}

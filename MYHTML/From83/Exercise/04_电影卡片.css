@@ -1,0 +1,44 @@
+.a{
+    margin: 50px 100px;
+    width: 239px;
+    /* height: 346px; */
+    border: 1px solid #eeecec;
+    box-shadow: -2px 2px 5px rgba(0,0,0,.2);
+}
+
+.b2{
+    margin: 15px 16px;
+}
+
+.c21{
+    font-size: 15px;
+    color: #b3b3b3;
+}
+
+.c22,.c23{
+    font-size: 13px;
+    color: #bebebe;
+}
+
+.c22{
+    margin-top: 13px;
+    margin-bottom: 20px;
+}
+
+.line{
+    border-bottom: 1px solid #eeecec;
+}
+
+.b3{
+    margin: 15px 0px;
+}
+
+.b3 .c31{
+    float: left;
+    margin-left: 13px;
+}
+
+.b3 .c32{
+    float: right;
+    margin-right: 35px;
+}

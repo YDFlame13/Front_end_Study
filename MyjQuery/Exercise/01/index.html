@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fa/css/all.min.css">
+    <link rel="stylesheet" href="./bootStrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./bootStrap/js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <script>
+        // jQuery入口函数
+        // $(document).ready(function(){
+
+        // });
+        // $(function(){
+        //     alert(11);
+        // });
+        $(function(){
+            // $是jQury别称，也是jQuery的顶级对象 
+            //dom对象（原生js对象）不等同于jQuery对象，jQuery对象是用一个伪数组封装了的对象，但是两者可以相互转换
+            // dom对象转换为jQuery对象
+            // $(dom对象)
+                // var mydiv=document.querySelector('div');
+                // $(mydiv);
+                // console.log($(mydiv));
+            // jQuery对象转换为dom对象
+            // jQuer对象[索引]  jQuer对象.get(索引)
+                // var mydiv=document.querySelector('.a');
+                // console.log(mydiv);
+                // $('div')[0].style.backgroundColor="red";
+                // $('div').get(0).style.backgroundColor="red";
+                // mydiv.style.width="300px";
+            //jQuery选择器：$('Css元素选择器')
+            //设置元素样式：jQuery对象.css("样式","值")
+            //筛选选择器：
+                //第一个 $("xxx:first")
+                //最后一个 $("xxx:last")
+                //第n个 $("xxx:eq(n)")
+                //索引为奇数 $("xxx:odd")
+                //索引为偶数 $("xxx:even")
+            //关系选择
+                // parent() 父元素
+                // parents() 祖先元素
+                // children(selector)子元素
+                // find(selector) 后代元素
+                // siblings(selector) 兄弟元素，不包括自己
+                // nextAll() 当前元素后所有兄弟元素
+                // prevAll() 当前元素前的所有兄弟元素
+                // hasClass(class) 检查当前元素是否含有某类 有，返回true
+                // eq(index) 相当于$("xxx:eq(n)")
+            // $(this)jQuery 的当前元素
+            // show() 显示元素
+            // 得到当前元素索引号 $(this).index()
+            // prop("属性") 获取元素固有属性
+            // prop("属性","值") 修改元素固有属性
+            // attr("属性") 获取元素自定义属性
+            // attr("属性","值") 修改元素自定义属性
+            // data("属性") 获取元素数据缓存属性（元素有该属性，但不会表现与dom中）
+            // data("属性","值") 修改元素数据缓存属性
+            // each(function(index,domEle){})遍历元素 index 索引,domEle dom对象（这里是dom对象，如果要用jQuery方法需要将其转换为jQuery对象）
+            // $.each()遍历数组等，进行数据处理
+            // $("元素") 如：$("<li>新的li</li>") 创建元素
+                // 添加元素
+                    // 内部添加 元素.append(新元素)  添加到最后
+                        // 元素.prepend(新元素)  添加到最前
+                    // 外部添加 元素.after(新元素) 添加到最后
+                        // 元素.before(新元素)  添加到最前
+                // 删除元素 remove()删除自己  empty()删除自己的全部后代元素,等价于 html("")
+            // jQuery 尺寸、位置
+                // 尺寸
+                    // width()/height()取得元素的宽度或者高度 只算width/height 可取得可设置
+                    // innerWidth()/innerHeight()取得元素的宽度或者高度 算width/height + padding 可取得可设置
+                    // outerWidth()/outerHeight()取得元素的宽度或者高度 算width/height + padding + border 可取得可设置
+                    // outerWidth(true)/outerHeight(true)取得元素的宽度或者高度 算width/height + padding + border + margin 可取得可设置
+                // 位置
+                    // offset()方法设置或返回元素相对于文档偏移量 两个属性left top 
+                    // position()返回元素相对于其包含块的偏移量 ！只能获取，不能设置
+                    // scrollTop()/scollLeft()设置或获取元素被卷去的头部和左侧
+            // jQuery事件注册
+                // on(事件,子元素选择器,事件函数) 为元素绑定事件（一个或者多个）及事件委托，可以动态绑定
+                // off() 移除事件（所有）
+                // off(事件) 移除某事件
+                // off(事件,子元素) 移除事件委托
+                // one(事件) 一次性事件
+                // 自动触发事件
+                    // element.事件()
+                    // element.trigger(事件)
+                    // element.triggerHandler(事件) 不会触发默认事件
+            // jQuery对象拷贝
+                // $.extend(浅拷贝/深拷贝：false/true,拷贝到的对象,被拷贝对象,) 浅拷贝：只是把指针赋值给新对象；深拷贝：创建一个新的对象，如果有不冲突属性，会合并。
+            // jQuery多库共存
+                // jQuery使用$作为标识符，可能会与其他js库或者是用户自己写的js文件冲突。
+                // 解决方法
+                    // 1.把jQuery中的$改为jQuery
+                    // 2.使用noConflict()函数重新定义一个标识符来替换$标识符 var myjQuery=jQuery.noConflict();
+            // jQuery插件
+                // jQuery插件库 http://www.jq22.com/
+                // jQuery之家 http://www.htmleaf.com/
+                // jQuery常用插件
+                    // 瀑布流
+                    // 图片懒加载
+                    // 全屏滚动  gitHub: https://github.com/alvarotrigo/fullPage.js  中文翻译网站：http://www.dowebok.com/demo/2014/77/
+        });
+    </script>
+    <div class="a" style="width: 100px; height: 100px; background-color: aqua;"></div>
+</body>
+</html>

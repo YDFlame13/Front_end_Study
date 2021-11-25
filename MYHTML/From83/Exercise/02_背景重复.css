@@ -1,0 +1,8 @@
+.box1{
+    width: 990px;
+    height: 32px;
+    margin: 50px auto;
+    /* background-color: red; */
+    background-image: url("../其他文件/picture/background2.png");
+    background-repeat: repeat-x;
+}

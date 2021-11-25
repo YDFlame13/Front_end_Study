@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鼠标位置</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script>
+        window.onload=function(){
+            // 获取两个div
+            var area=document.getElementById("areaDiv");
+            var show=document.getElementById("showMsg");
+            //为鼠标移动事件绑定响应函数
+            area.onmousemove=function(event){
+                if(!event){
+                    event=window.event;
+                }
+                // event=event||window.event; 或者
+                //获取鼠标坐标
+                var x=event.clientX;
+                var y=event.clientY;
+                //设置show的显示样式
+                show.style.fontSize="30px";
+                show.style.lineHeight="50px";
+                show.style.paddingLeft="200px";
+                show.style.width="300px"
+                //将坐标在show中显示
+                show.innerHTML="x="+x+"<br>y="+y;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="a">
+        <div id="areaDiv"></div>
+        <div id="showMsg"></div>
+    </div>
+</body>
+</html>

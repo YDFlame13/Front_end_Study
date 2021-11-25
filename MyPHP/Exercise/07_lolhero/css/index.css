@@ -1,0 +1,19 @@
+.heroname {
+  text-decoration: none;
+  color: #367fdf;
+  text-align: center;
+}
+a:hover {
+  text-decoration: none;
+  color: aqua;
+}
+.hero {
+  display: none;
+}
+.panel-body {
+  min-height: 219.8px;
+}
+.heroimg {
+  width: 100%;
+}
+/*# sourceMappingURL=./index.css.map */

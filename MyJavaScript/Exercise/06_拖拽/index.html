@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拖拽</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./fa/css/all.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script>
+        window.onload=function(){
+            function tuozuai(box){
+                //为box鼠标按下绑定响应事件
+                box.onmousedown=function(event){
+                    box.setCapture&&box.setCapture();  //兼容某
+                    event=event||window.event;
+                    var boxstyle=box.currentStyle||getComputedStyle(box,null);
+                    var bl=parseInt(boxstyle.left)||0;
+                    var bt=parseInt(boxstyle.top)||0;
+                    // alert(bl);
+                    var bst=document.body.scrollTop||document.documentElement.scrollTop;
+                    var bsl=document.body.scrollLeft||document.documentElement.scrollLeft;
+                    var bx=event.clientX+bsl-bl;
+                    var by=event.clientY+bst-bt;
+                    // bx=by=0;
+                    document.onmousemove=function(event){
+                        event=event||window.event;
+                        var x=event.clientX;
+                        var y=event.clientY;
+                        var st=document.body.scrollTop||document.documentElement.scrollTop;
+                        var sl=document.body.scrollLeft||document.documentElement.scrollLeft;
+                        box.style.left=x-bx+sl+"px";
+                        box.style.top=y-by+st+"px";
+                    }
+                    //为document鼠标松开绑定响应事件
+                    document.onmouseup=function(){
+                        document.onmousemove=null;
+                        document.onmouseup=null;
+
+                        box.releaseCapture&&box.releaseCapture();
+                    }
+                    return false;
+                }
+            }
+            //获取div
+            var boxs=document.getElementsByTagName("div");
+            for(var i=0;i<boxs.length;++i){
+                tuozuai(boxs[i]);
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+    <div class="a"></div>
+    wws
+</body>
+</html>

@@ -1,0 +1,34 @@
+#menu{
+    width: 1205px;
+    height: 48px;
+    background-color: #E8E7E3;
+    margin:100px auto;
+}
+
+#menu li{
+    float: left;
+    /* height: 48px; */
+    /* 让li中的元素居中显示 */
+    line-height: 48px;
+}
+
+#menu a{
+    /* 去除链接下划线 */
+    text-decoration: none;
+
+    /* 修改字体颜色及大小 */
+    color: #777777;
+    font-size: 18px;
+
+    /*把a转化为块元素，使得无论点击文字还是文字的所占空白区域都能进行超链接跳转*/
+    display: block;
+
+    /* 设置外边距，使各个导航块距离拉开 */
+    padding: 0 39px;
+}
+
+/* 设置鼠标移入后效果 */
+#menu a:hover{
+    background-color: #3F3F3F;
+    color: rgb(229,228,224);
+}

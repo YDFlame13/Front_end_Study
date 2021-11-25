@@ -1,0 +1,33 @@
+div{
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+    background-image: url(../其他文件/picture/trump_run.png);
+    animation: trump_run infinite 0.5s steps(6);
+}
+
+.a{
+    background-position-y: 0;
+}
+
+.b{
+    background-position-y: 100px;
+}
+
+.c{
+    background-position-y: 200px;
+}
+
+.d{
+    background-position-y: 300px;
+}
+
+@keyframes trump_run{
+    from{
+        background-position-x: 0;
+    }
+
+    to{
+        background-position-x: 600px;
+    }
+}

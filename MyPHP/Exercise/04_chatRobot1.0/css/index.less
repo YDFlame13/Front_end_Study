@@ -1,0 +1,166 @@
+.chatWindow{
+    width: 765px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 1%;
+    border: rgb(200,200,200) solid 1px;
+    // background-color: aqua;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+
+    .whead{
+        width: 100%;
+        height: 80px;
+        // background-color: aqua;
+
+        .ha{
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            font-size: 18px;
+            text-align: center;
+            background-image: linear-gradient(to right,rgb(76,140,254),rgb(32,209,254));
+        }
+        .hb{
+            padding-right: 18px;
+            .menupoint{
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: rgb(120,188,255);
+                float: right;
+                margin: 17px 2px;
+            }
+        }
+    }
+
+    .wbody{
+        width: 100%;
+        height: 438px;
+        overflow: hidden;
+        overflow-y: auto;
+
+        .chatmassage{
+            // .time{
+
+            // }
+
+            .massage{
+                height: auto;
+                width: 100%;
+                overflow: hidden;
+
+                .chater{
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                .massagebox{
+                    height: auto;
+                    padding: 10px;
+                    margin: 0 10px;
+                    max-width: 643px;
+                    border-radius: 6px;
+                    p{
+                        font-size: 16px;
+                        line-height: 1.5;
+                        // 设置自动换行
+                        word-wrap: break-word;
+                        word-break: keep-all;
+                    }
+                }
+            }
+
+            li{
+                padding: 10px 10px;
+                height: auto;
+            }
+
+            .robot{
+                .chater{
+                    background-image: url(../img/QQ图片20211120152051.jpg);
+                    float: left;
+                }
+
+                .massagebox{
+                    float: left;
+                    background-color: rgb(229,229,229);
+                }
+            }
+
+            .user{
+                .chater{
+                    background-image: url('../img/QQ图片20211120152206.jpg');
+                    float: right;
+                }
+
+                .massagebox{
+                    float: right;
+                    background-color: rgb(18,183,245);
+                }
+            }
+        }
+    }
+
+    .wfoot{
+        height: 139px;
+        // background-color: red;
+        border-top: rgb(235,235,235) solid 1px;
+
+        .fmenu{
+            height: 40px;
+            padding-left: 16px;
+
+            .fmenupoint{
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: rgb(135,139,153);
+                float: left;
+                margin: 17px 2px;
+            }
+        }
+
+        .myworlds{
+            width: 745px;
+            height: 50px;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0;
+            padding: 0 10px;
+            font-size: 18px;
+        }
+
+        .myworlds:focus-visible{
+            outline: none;
+        }
+
+        .fsubmit{
+            height: 50px;
+            .fclose,.fsend{
+                width: 72px;
+                height: 28px;
+                float: right;
+                margin: 10px 12px;
+                text-align: center;
+                line-height: 28px;
+                border-radius: 8%;
+            }
+
+            .fclose{
+                width: 70px;
+                height: 26px;
+                background-color: white;
+                border: rgb(205,207,208) solid 1px;
+            }
+
+            .fsend{
+                background-color: rgb(18,183,245);
+            }
+        }
+    }
+}

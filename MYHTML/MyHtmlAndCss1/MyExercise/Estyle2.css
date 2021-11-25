@@ -1,0 +1,41 @@
+body{
+    background-color: cornflowerblue;
+}
+
+ul{
+    width: 190px;
+    height: 470px;
+    background-color: #fefefe;
+
+    margin: 50px auto;
+
+    padding: 10px 0;
+}
+
+li{
+    height: 25px;
+    line-height: 25px;
+    
+    padding-left: 18px;
+    
+    font-size: 14px;
+}
+
+li:hover{
+    background-color:rgb(217,217,217);
+}
+
+a{
+    color: #333333;
+    text-decoration: none;
+}
+
+a:hover{
+    color:red;
+}
+
+span{
+    color: #636363;
+    font-size: 12px;
+    /* padding: 0 2px; */
+}

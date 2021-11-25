@@ -1,0 +1,23 @@
+.a{
+    height: 271px;
+    width: 132px;
+    margin: 100px auto;
+    background-image: url(../其他文件/picture/bigtap-mitu-queue-big.png);
+    /* transition: 0.5s steps(4); */
+    /* infinite: 无限执行 */
+    animation: mitu 0.5s steps(4) infinite;
+}
+
+.a:hover{
+    background-position: 528px 0;
+}
+
+@keyframes mitu{
+    from{
+        background-position: 0 0;
+    }
+
+    to{
+        background-position: 528px 0;
+    }
+}
